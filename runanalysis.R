@@ -1,4 +1,5 @@
-+## before starting load the reshape2 package for STEP 5
+@@ -0,0 +1,59 @@
+ +## before starting load the reshape2 package for STEP 5
  +
  +library(reshape2)
  +
@@ -56,4 +57,5 @@
  +tidy <- dcast(melted, subjectID+activity ~ variable, mean)
  +
  +# write the tidy data set to a file
- +write.table(tidy, "tidydata.txt", row.names=FALSE) \n
+ +write.table(tidy, "tidydata.txt", row.names=FALSE) 
+ \No newline at end of file
